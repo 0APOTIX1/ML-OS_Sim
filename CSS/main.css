@@ -1,0 +1,12 @@
+body {
+  background-color: #000000;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+text {
+  font-family: arial;
+}
+.usn {
+  user-select: none;
+}

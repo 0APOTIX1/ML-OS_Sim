@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <css>
+      <link rel="stylesheet" href="CSS/main.css">
+      <link rel="stylesheet" href="CSS/Script_Animation.css">
+      <link rel="stylesheet" href="CSS/LockUI.css">
+      <link rel="stylesheet" href="CSS/Desktop.css">
+    </css>
+    <title>ML OS</title>
+    <scripts>
+      <script src="SourceJS/HelperFunctions.js"></script>
+      <script src="SourceJS/index0.js"></script>
+      <script src="SourceJS/LockScreen0.js"></script>
+      <script src="SourceJS/Desktop0.js"></script>
+    </scripts>
+  </head>
+  <body id="body" >
+    <div class="div_LockUI" id="div_LockUI" style="visibility: hidden;">
+      <img src="Images/Background_0.avif" class="div_LockUI_img_BG" onclick="LockUI_BG_Click();" id="div_LockUI_img_BG">
+      <div class="div_LockUI-div_Accounts" id="div_LockUI-div_Accounts">
+        <!--
+        <div style='position: absolute; left: 50%; top: 165px; transform: translate(-50%, -50%); width: 500px; height: 100px; background-color: #486a5850; backdrop-filter: blur(25px); border-radius: 20px;' class='div_Account div_Account0 Script_Animation0' id='div_Account0'>
+          <text style='font-size: 30px; position: absolute; top: 50%; left: 60px; transform: translate(0px, -50%);' class='div_Account0.text0' id='div_Account0.text0'>test</text>  <img class='div_Account0.img0' id='div_Account0.img0'>
+        </div>
+        -->
+      </div>
+      <div class="div_LockUI-div_Login" id="div_LockUI-div_Login" style="visibility: hidden; ">
+        <img class="div_LockUI-div_Login-img_User_Icon" id="div_LockUI-div_Login-img_User_Icon" src="Images/Default_User_Icon.png" >
+        <text class="div_LockUI-div_Login-text_Username" id="div_LockUI-div_Login-text_Username">Username</text>
+        <div class="div_LockUI-div_Login-div_Input" id="div_LockUI-div_Login-div_Input">
+          <text class="div_LockUI-div_Login-div_Input-text_Button" id="div_LockUI-div_Login-div_Input-text_Button" onclick="Check_Password();">Log in</text>
+          <input type="password" id="div_LockUI-div_Login-div_Input-input_Password" class="div_LockUI-div_Login-div_Input-input_Password">
+        </div>
+      </div>
+    </div>
+    <div class="div_Desktop" id="div_Desktop" style="visibility: hidden;">
+      <img class="div_Desktop-img_BG" id="div_Desktop-img_BG" src="Images/Background_0.avif">
+      <div class="div_Desktop-div_Start_Menu" id="div_Desktop-div_Start_Menu" style="visibility: hidden;">
+        <!--
+        <div style="position: absolute; top: 10px; left: 0px; height: 60px; width: 100%; background-color: #e0403080;" id="div_Desktop-div_Start_Menu-div_Start_Menu_Item0" class="div_Desktop-div_Start_Menu-div_Start_Menu_Item">
+          <img style="position: absolute; top: 50%; left: 10px; transform: translate(0px, -50%); width: 50px; height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png">
+          <text style="position: absolute; top: 50%; left: 65px; transform: translate(0px, -50%); font-size: 20px;">Settings</text>
+        </div>
+        -->
+      </div>
+      <div class="div_Desktop-div_Taskbar" id="div_Desktop-div_Taskbar">
+        <div class="div_Desktop-div_Taskbar-div_Start_Icon" id="div_Desktop-div_Taskbar-div_Start_Icon" onmousedown="Start_Menu.Toggle();">
+          <img class="div_Desktop-div_Taskbar-div_Start_Icon-img_Icon" id="div_Desktop-div_Taskbar-div_Start_Icon-img_Icon" src="Images/White_Circle.svg">
+        </div>
+      </div>
+      <group class="div_Desktop-group_Notifications" id="div_Desktop-group_Notifications">
+        <!--
+          <div style="position: absolute; bottom: 140px; right: 5px; width: 10px; height: 250px;" class="div_Desktop-group_Notifications-div_Notification div_Desktop-group_Notifications-div_Notification0" id="div_Desktop-group_Notifications-div_Notification0">
+            <img src="Images/Default_User_Icon.png" id="div_Desktop-group_Notifications-div_Notification-img_Notification_Image" class="div_Desktop-group_Notifications-div_Notification-img_Notification_Image div_Desktop-group_Notifications-div_Notification0-img_Notification_Image">
+            <text id="div_Desktop-group_Notifications-div_Notification0-text_Text" class="div_Desktop-group_Notifications-div_Notification-text_Text div_Desktop-group_Notifications-div_Notification0-text_Text">This is a notification text for testing</text>
+            <div style="position: absolute; bottom: 13px; left: 50%; transform: translate(-50%, 0px); height: 45px; width: 70%; background-color: #50505050; border-radius: 5px;" id="div_Desktop-group_Notifications-div_Notification0-div_Button_Div" class="div_Desktop-group_Notifications-div_Notification-div_Button_Div div_Desktop-group_Notifications-div_Notification0-div_Button_Div">
+              <text style="white-space: nowrap;" class="div_Desktop-group_Notifications-div_Notification-div_Button_Div-text_Button_Text" id="div_Desktop-group_Notifications-div_Notification0-div_Button_Div-text_Button_Text">This is a test button</text>
+            </div>
+          </div>
+          -->
+      </group>
+    </div>
+  </body>
+  <script src="SourceJS/index1.js"></script>
+  <script src="SourceJS/LockScreen1.js"></script>
+  <script src="SourceJS/Desktop1.js"></script>
+</html>
